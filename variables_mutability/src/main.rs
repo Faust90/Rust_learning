@@ -21,4 +21,9 @@ fn main() {
     // Immutable "spaces" is shadowed from string to number
     let _spaces = "   ";
     let _spaces = _spaces.len();
+
+    // Tuples
+    let tuple = (1, 1, 0);
+    
+    println!("The value of first value in tuple is {0}",tuple.0);
 }

@@ -1,5 +1,11 @@
 # Personal notes
 
+Rust is statically typed.
+
+*Panicking* is exiting with an error.
+
+Integer overflow is handled through wrapping (restarting from 0 and going on) in release env. This can be handled with some prefixes each of which has its behaviour (wrapping_*, checked_*)
+
 ## conventions
 
 snake_case for variable and function names. 
