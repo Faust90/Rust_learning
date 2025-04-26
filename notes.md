@@ -2,11 +2,18 @@
 
 ## conventions
 
-snake_case for variable and function names
+snake_case for variable and function names. 
+constants must be in caps lock
+variable names preceded by "_" will not give the usual "unused" warning
 
 ## shadowing
 
-reuse variable names with different type from a point to another in the code (see guessing_game)
+reuse variable names with different or same type from a point to another in the code (see variables_mutability).
+mutable variables **cannot** change type. Through shadowing, this is kind of possibile (but not the same thing)
+
+## constants vs immutable
+
+constants are **always** immutable
 
 ## cargo
 
