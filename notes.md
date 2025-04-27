@@ -6,6 +6,22 @@ Rust is statically typed.
 
 Integer overflow is handled through wrapping (restarting from 0 and going on) in release env. This can be handled with some prefixes each of which has its behaviour (wrapping_*, checked_*)
 
+## Ownership
+
+Memory is managed through ownership rules check at compile time.
+Each value in Rust has a owner and only a owner at runtime. When the owner goes out of scope, value is dropped
+
+double free error: when memory of a value is freed twice 
+### Stack  
+Last in, first out
+
+### Heap
+Allocate and Point 
+
+## Traits
+
+Copy and Drop are Traits that special types can be annotated with to implement specific behavious during application phases
+
 ## conventions
 
 snake_case for variable and function names. 

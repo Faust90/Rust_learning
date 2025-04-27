@@ -14,7 +14,7 @@ fn main() {
     loop {
         println!("Please input your guess");
 
-        //New mutable variable bound to a empty string
+        //New mutable variable bound to a empty string which size is not know at compile time
         let mut guess = String::new();
 
         io::stdin()
