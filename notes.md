@@ -22,6 +22,10 @@ Allocate and Point
 
 Copy and Drop are Traits that special types can be annotated with to implement specific behavious during application phases
 
+## Borrowing
+
+Through reference you can borrow one value. You can only have **either** **one** mutable or **any** immutable references, that **must always** be valid
+
 ## conventions
 
 snake_case for variable and function names. 

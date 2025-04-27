@@ -74,7 +74,7 @@ fn main() {
 fn takes_ownership(some_string: String) {
     // some_string comes into scope
     println!("{some_string}");
-} // some_string goes out of scope, drop is called and memory is freed
+} // some_string goes out of scope, drop is called and memory is freed. Whatever was passed in some_string is not available anymore
 
 fn gives_ownership() -> String {
     let some_string = String::from("yours");
