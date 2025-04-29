@@ -9,8 +9,8 @@ fn main() {
     }
     //Here Rust calls "drop" and frees "s", like C++ RAII
 
-    // s1 and s2 points the same value!
     {
+        // s1 and s2 points the same value!
         let _s1 = String::from("hello");
         let s2: String = _s1; //from here, s1 is no longer a valid reference. the value has "moved" to s2 
 

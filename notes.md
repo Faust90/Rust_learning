@@ -31,6 +31,7 @@ Through reference you can borrow one value. You can only have **either** **one**
 snake_case for variable and function names. 
 constants must be in caps lock
 variable names preceded by "_" will not give the usual "unused" warning
+*methods* are functions within a struct
 
 ## shadowing
 
