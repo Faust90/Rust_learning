@@ -42,6 +42,10 @@ mutable variables **cannot** change type. Through shadowing, this is kind of pos
 
 constants are **always** immutable
 
+## enums
+
+Enums are complex types and cannot be simply iterable 
+
 ## cargo
 
 Dependency manager and compiler based on *Cargo.toml* and *Cargo.lock* files.
