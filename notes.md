@@ -6,6 +6,8 @@ Rust is statically typed.
 
 Integer overflow is handled through wrapping (restarting from 0 and going on) in release env. This can be handled with some prefixes each of which has its behaviour (wrapping_*, checked_*)
 
+Build a documentation of the project. --open flag will open the built doc on the browser
+
 ## Ownership
 
 Memory is managed through ownership rules check at compile time.
@@ -25,6 +27,23 @@ Copy and Drop are Traits that special types can be annotated with to implement s
 ## Borrowing
 
 Through reference you can borrow one value. You can only have **either** **one** mutable or **any** immutable references, that **must always** be valid
+
+## Crate
+Smallest Rust entity.
+
+### Binary Crate
+Is executable and MUST have a fn main(); Usually have just the minimum required code to start the executable that calls the code of the library crate
+
+### Library Crate
+Does not have a fn main() and is usable in other crates
+
+## Package
+
+Bundle of one or multiple crates. Needs a Cargo.toml file to explain how to build it
+
+## Module
+
+Organize code and code visibility inside a crate
 
 ## conventions
 
@@ -46,15 +65,16 @@ constants are **always** immutable
 
 Enums are complex types and cannot be simply iterable 
 
+
 ## cargo
 
 Dependency manager and compiler based on *Cargo.toml* and *Cargo.lock* files.
 *Cargo.lock* is a snapshot of a working build, it needs to be versioned.
 
 ### Commands
-#### cargo new
+#### cargo new <project_name>
 
-generate a "hello world" project with a Cargo.toml dependencies file
+generate a "hello world" <project_name> binary crate with a Cargo.toml dependencies file
 
 #### cargo build
 
@@ -73,5 +93,3 @@ compile without generating any executable
 update all the crates in Cargo.toml ignoring Cargo.lock  
 
 #### cargo doc
-
-Build a documentation of the project. --open flag will open the built doc on the browser
