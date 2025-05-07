@@ -1,33 +1,11 @@
-//Each of "mod" is a module
-// we can group definitions
-mod front_of_house {
+mod front_of_house; //taken from front_of_house. IS NOT LIKE A IMPORT!
 
-    fn entrance() {}
-
-    // Public (explicited by "pub")
-    pub mod hosting {
-        // We also have to mark each thing inside a module to be Public 
-        pub fn add_to_waitlist() {
-            //"super::" is used to refernce the parent scope or module 
-            super::entrance();
-        }
-
-        pub fn seat_at_table() {}
-    }
-
-    // Private (by default)
-    mod serving {
-        fn take_order() {}
-
-        fn serve_order() {}
-
-        fn take_payment() {}
-    }
-}
+// using the scope in a way such that hosting can be used on is own 
+use crate::front_of_house::*;
 
 pub fn eat_at_restaurant() {
     //Absolute path
-    crate::front_of_house::hosting::add_to_waitlist();
+    hosting::add_to_waitlist();
 
     //Relative path
     front_of_house::hosting::seat_at_table();

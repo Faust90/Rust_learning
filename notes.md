@@ -2,11 +2,15 @@
 
 Rust is statically typed.
 
-*Panicking* is exiting with an error.
+*Panicking* is exiting with an error. 
+
+When a function returns a *Result* or *Option*, error can be propagated with "?". This makes a function end early and return a error message without any boilerplate
 
 Integer overflow is handled through wrapping (restarting from 0 and going on) in release env. This can be handled with some prefixes each of which has its behaviour (wrapping_*, checked_*)
 
 Build a documentation of the project. --open flag will open the built doc on the browser
+
+bringing items in with **use** is usually written with hte full path specified
 
 ## Ownership
 
@@ -64,6 +68,10 @@ constants are **always** immutable
 ## enums
 
 Enums are complex types and cannot be simply iterable 
+
+## Generics
+
+Generics are converted in colpile time to monotypes version. This improves performances
 
 
 ## cargo
